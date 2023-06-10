@@ -1,0 +1,193 @@
+/* Set up */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header {
+	font-family: 'Ruda', sans-serif;
+	font-weight: bold;
+}
+
+body, html {
+	scroll-behavior: smooth;
+}
+
+#home-button {
+	font-size: 15px;
+	color: rgb(80, 167, 255);
+	transition-duration: 500ms;
+	transition-timing-function: ease-in-out;
+}
+
+#home-button:hover {
+	transition-duration: 500ms;
+	transition-timing-function: ease-in-out;
+	
+	margin-right: -5px;
+	padding-left: 5px;
+
+	color: blue;
+}
+
+.option-heading {
+	font-family: 'Ruda', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	font-style: italic;
+}
+
+.option {
+	margin-bottom: 20px;
+}
+
+p,
+a,
+li {
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Body Containers */
+
+nav {
+	float: left;
+	border-right: 1px solid black;
+	min-width: 180px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	border: 1px solid green;
+
+	padding: 30px;
+}
+
+/* Nav Styling */
+a:visited {
+	color: inherit;
+}
+
+a:active {
+	color: inherit;
+}
+
+nav > a {
+	text-decoration: none;
+	color: inherit;
+	height: 50px;
+	line-height: 50px;
+	text-align: start;
+	padding-right: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: auto;
+	padding-left: 20px;
+}
+
+nav > a:hover {
+	background-color: rgb(210, 210, 210);
+	opacity: 95%;
+	margin-right: -15px;
+	transition-duration: 250ms;
+	box-shadow: 0 5px 5px rgb(226, 226, 226);
+	border-bottom: 0;
+	overflow: visible;
+	white-space: normal;
+	width: max-content;
+	min-width: 125%;
+}
+
+nav > header {
+	width: 100%;
+	height: 75px;
+	line-height: 75px;
+
+	text-align: center;
+
+	font-weight: 900;
+	font-size: 44px;
+}
+
+.border-bottom {
+	border-bottom: 1px solid black;
+}
+
+/* Main Styling */
+
+.main-section {
+	margin-bottom: 30px;
+}
+
+.main-section > header {
+	font-size: 25px;
+}
+
+.main-section-divider {
+	color: rgb(210, 210, 210);
+	opacity: 35%;
+}
+
+code {
+	display: block;
+	text-align: left;
+	white-space: pre-line;
+	position: relative;
+	word-break: normal;
+	word-wrap: normal;
+	background-color: #f7f7f7;
+	padding-left: 3rem;
+	padding-bottom: 1.75rem;
+	border-radius: 5px;
+	margin: 10px 0;
+	line-height: 1.75rem;
+}
+
+footer {
+	background-color: #f8f9fa;
+	text-align: center;
+	padding: 20px;
+	font-size: 0.875em;
+}
+
+.disclaimer,
+.trademark {
+	margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+	nav {
+		border: 1px solid blue;
+	}
+
+	main {
+		padding: 10px;
+	}
+}
+
+@media (max-width: 1145px) {
+	nav > header {
+		font-size: 30px;
+	}
+}
