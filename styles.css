@@ -104,6 +104,8 @@ nav > a {
 	white-space: nowrap;
 	width: auto;
 	padding-left: 20px;
+
+	z-index: 999;
 }
 
 nav > a:hover {
